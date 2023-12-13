@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Buff Inspect",
+    "version": "1.0",
+  
+    "description": "Adds inspect link to clipboard on buff when pressing inspect in-game button",
+    
+    "content_scripts": [
+      {
+        "matches": ["*://buff.163.com/*"],
+        "js": ["buff_inspect.js"]
+      }
+    ]
+}
